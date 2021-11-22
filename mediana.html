@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styleMediana.css">
+    <title>Mediana</title>
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="header__title">
+            Mediana
+        </h1>
+        <div class="header__container--Home" onclick="location.href='index.html'">
+            <img src="./Assets/home.png" alt="Home" width="70px" height="70px">
+            <p>Home</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+    
+            <img class="imagen" src="./Assets/media-aritmetica-150x150.png" width="200px" height="200px">
+
+            <div class="mediana">
+
+                <div class= "mediana__item1">
+                    <h2>Calcular Mediana</h2>
+                    <form class="mediana__container--form">
+                        <label for="InputLista" class="Lista__container--laber">
+                        Ingrese los sueldos:
+                        </label>
+                        <input id="InputLista" type="number" class="input" placeholder="1000$">
+                        <button type="button" onclick="subirNumerosLista()"> Agregar números a la lista</button>
+                        <button type="button" onclick="onClickCalcularMediana()">Calcular Mediana</button>
+                    </form>
+                </div>
+            
+                <div class="mediana__item2">
+                    <h2>Sueldos</h2>
+                        <div class="mediana__item--lista">
+                            <ol id="listaDeSueldos">
+                            </ol>
+                        </div>
+                </div>
+             
+            </div>
+
+            
+        </section>
+    </main>
+
+    <div class="resultado" id="resultado">
+        <div class="resultado__item" id="resultadoItem">
+            <p><span onclick="closeresultado()">X</span></p>
+            <img src="./Assets/mediana.png">
+            <h2 id="Resultado"></h2>
+        </div>
+    </div>
+    
+    <script src="js/mediana.js"></script>
+
+</body>
+</html>

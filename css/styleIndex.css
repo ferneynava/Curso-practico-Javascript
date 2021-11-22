@@ -1,0 +1,87 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh;
+    background: rgb(5,5,5);
+    background: linear-gradient(0deg, rgba(5,5,5,0) , rgba(20,33,61,1) 100%);
+    background-color: #fca311;    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header{
+    display: block;
+    height: 130px;
+    background:rgba(73, 73, 73, 0.226);
+    text-align: center;
+}
+
+.header__title{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+}
+
+
+.header p{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+
+main{
+    display: block; 
+}
+
+.Navegacion{
+    text-align: center;
+}
+
+.Indices{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 400px));
+    gap: 19px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.Indice_item1{
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    padding: 15px 45px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    place-self: center;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+
+ .Indice_item1:hover {
+   background-position: right center; 
+   color: #fff;
+   text-decoration: none;
+ }
+
+.Indice_item1 h2{
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Indice_item1 img{
+    margin-bottom: 10px;
+}

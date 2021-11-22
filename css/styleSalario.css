@@ -1,0 +1,177 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh;
+    background: rgb(5,5,5);
+    background: linear-gradient(0deg, rgba(5,5,5,0) , rgba(20,33,61,1) 100%);
+    background-color: #fca311;    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-evenly;
+    background:rgba(73, 73, 73, 0.226);
+}
+
+.header__title{
+    color: white;
+    font-family:"Poppins", sans-serif;
+    font-size: 26px;
+}
+
+.header__container--Home{
+    cursor: pointer;
+    text-align: center;
+    color: white;  
+}
+
+.header__container--Home p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+main{
+    display: block;
+}
+
+.section{
+    text-align: center;
+}
+
+.salario{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 700px));
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.salario__item{
+    border: 2px solid black;
+    background-color: rgba(163, 162, 162, 0.418);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    place-self: center;
+    width: 350px;
+}
+
+.salario__item h2{
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.DatosEmpleado__container--laber{
+    font-size: 19px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.salario__container--form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    background-color: rgba(163, 162, 162, 0.418);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    outline: none;
+    height: 30px;
+    width: 290px;
+}
+
+.salario__container--form button{
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 45px;
+    width: 320px;
+    margin-bottom: 10px;
+    font-family: 'Mulish', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color:#08FF00;
+}
+
+.salario__container--form button:hover{
+    background-color: #416568;
+}
+
+.salario__item1 h2{
+    font-size: 32px;
+}
+
+#listaDeSalarios li{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #023047;
+    padding-top: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+#listaDeSalarios li::marker{
+    color: #219ebc;
+}
+
+.resultado{
+    position: fixed;
+    background-color:rgba(9, 9, 9, 0.6);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    place-items: center;
+}
+
+.resultado .resultado__item{
+    background-color:#219ebc;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: "Open Sans", sans-serif; 
+}
+
+.resultado .resultado__item p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.4rem;
+}
+
+.resultado .resultado__item p span{
+    cursor: pointer;
+}
+
+#Resultado{
+    margin: 6px;
+    font-size: 60px;
+}

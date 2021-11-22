@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleproyecto.css">
+    <title>Capacidad de Endeudamiento</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">
+            Capacidad de Endeudamiento
+        </h1>
+        <div class="header__container--Home" onclick="location.href='index.html'">
+            <img src="./Assets/home.png" alt="Home" width="70px" height="70px">
+            <p>Home</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+
+            <div class="CapacidadDeEndeudamiento">
+
+                <div class="DatosCliente__item1">
+                    <h2>Ingrese sus Datos:</h2>
+                    <p>Nombre e ingresos totales mensual</p>
+                        <form class="DatosCliente__container--form">
+                            <label for="InputNombre" class="DatosCliente__container--label">
+                                Nombre:
+                            </label>
+    
+                            <input id="InputNombre" type="text" class="input" placeholder="Nombre completo">
+    
+                            <label for="InputIngresos" class="DatosCliente__container--laber2">
+                                Ingresos mensual: 
+                            </label>
+    
+                            <input id="InputIngresos" type="number" class="input" placeholder="Ingresos">
+                        </form>
+                </div>
+    
+                <div class="Gastos__item1">
+                    <h2>Gastos Fijos </h2>
+                        <p>Ingresa el valor de los gastos</p>
+                            <form class="Gastos__container--form">
+                                <label for="InputServiciosBasicos" class="Gastoscliente__container--laber1">
+                                    Servicios Básicos:
+                                </label>
+    
+                                <input id="InputServiciosBasicos" type="number" class="input" placeholder="Servicios Basicos">
+    
+                                <label for="InputAlimentacion" class="Gastoscliente__container--laber1">
+                                    Alimentación:
+                                </label>
+                                <input id="InputAlimentacion" type="number" class="input" placeholder="Alimentación">
+    
+                                <label for="InputTransporte" class="Gastoscliente__container--laber1">
+                                    Transporte:
+                                </label>
+                                <input id="InputTransporte" type="number" class="input" placeholder="Transporte">
+                            </form>
+                </div>
+    
+                <div class="Capacidad__item">
+                        <p>La capacidad de endeudamiento o capacidad de crédito tiene un límite 
+                        que va entre 30% y el 40% de los ingresos netos mensuales.</p>
+                                <label for="InputCapacidad" class="Capacidad__container--laber1" >
+                                    Selecciona la capacidad de endeudamiento 
+                                </label>
+                                <input class="InputCapacidadEndeu" id="InputCapacidadEndeuMenor" type="checkbox"> 
+                                <label for="InputCapacidadEndeuMenor" class="InputCapacidadEndeu--label"> 30% </label> 
+                                <input class="InputCapacidadEndeu" id="InputCapacidadEndeuMayor" type="checkbox"> <label for="InputCapacidadEndeuMayor" class="InputCapacidadEndeu--label"> 40% </label>
+                </div>
+                
+                <button type= "button" onclick="capacidadDeEndeudamiento()"> Calcular Capacidad de endeudamiento </button>
+            
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./js/Proyecto.js"></script>
+</body>
+</html>

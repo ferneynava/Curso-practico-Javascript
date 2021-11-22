@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleSalario.css">
+    <title>Salarios</title>
+</head>
+<body>
+     <header class="header">
+        <h1 class="header__title">
+             Salarios
+        </h1>
+        <div class="header__container--Home" onclick="location.href='index.html'">
+            <img src="./Assets/home.png" alt="Home" width="70px" height="70px">
+            <p>Home</p>
+        </div>
+     </header>
+
+    <main>
+        <section class="section">
+
+            <div class="salario">
+
+                <div class="salario__item">
+                    <h2>
+                        Calcular mediana salarial y mediana salarial top 10%
+                    </h2>
+                    <form class="salario__container--form">
+                        <label for="InputSalario" class="DatosEmpleado__container--laber">
+                            Ingrese tu nombre y salario:
+                        </label>
+                        <input id="InputNombre" type="text" class="input" placeholder="Nombre">
+                        <input id="InputSalario" type="number" class="input" placeholder="Salario">
+                        <button type="button" onclick="agregarElemento()">Agregar a la lista</button>
+                        <button type="button" onclick="eliminarElemento()">Eliminar Elemento</button>
+                        <button type="button" onclick="calcularMediaSalarial()">Calcular Mediana Salarial</button>
+                        <button type="button" onclick="calcularMediaSalarialTop()">Calcular Mediana Salarial Top 10%</button>
+                    </form>
+                </div>
+
+                <div class="salario__item1">
+                    <h2>Lista de elementos</h2>
+                    <div class="salario__item1--lista">
+                        <ol id= "listaDeSalarios">
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <div class="resultado" id="resultado">
+        <div class="resultado__item" id="resultadoItem">
+            <p><span onclick="closeresultado()">x</span></p>
+            <h2 id="Resultado"></h2>
+        </div>
+    </div>
+
+    <script src="./js/salarios.js"></script>
+    <script src="./js/analisis.js"></script>
+</body>
+</html>

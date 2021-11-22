@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleDescuentos.css">
+    <title>Porcentajes y descuentos</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">
+        Porcentajes y descuentos
+        </h1>
+        <div class="header__container--Home" onclick="location.href='index.html'">
+            <img src="./Assets/home.png" alt="Home" width="70px" height="70px">
+            <p>Home</p>
+        </div>
+    </header>
+  
+    <main>
+        <section class="section"> 
+
+            <img class="imagen" src="./Assets/media-aritmetica-150x150.png"width="200px" height="200px">
+            
+            <div class="descuentos">
+                <div class="descuentos__item">
+                    <h2>Calcula el precio a pagar de estos productos con descuento</h2>
+                        <form class="Descuentos__container--from">
+                            <label for="InputPrice" class="Descuentos__container--label1">
+                                Escribe el precio de tu producto
+                            </label>
+                            <input id="InputPrice" type="number" class="input" placeholder="Precio">
+                            <label for="InputDiscount" class="Descuentos__container--label1">
+                                Escribe el cupón de descuento para tu producto
+                            </label>
+                            <input id="InputCupon" type="text" class="input" placeholder="Cupon">
+                            <button type= "button" onclick="onClickButtonPriceDiscount()">
+                                Calcular el precio con Cupon
+                            </button>
+                        </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div class="resultado" id="resultado">
+        <div class="resultado__item" id="resultadoItem">
+            <p><span onclick="closeresultado();">x</span></p>
+                <div id="producto"></div>
+            <h2 id="Resultado"></h2>
+        </div>
+    </div>
+    <script src="./js/descuentos.js"></script>
+</body>
+</html>

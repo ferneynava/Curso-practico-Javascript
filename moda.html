@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styleModa.css">
+    <title>Moda</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">
+            Moda
+        </h1>
+        <div class="header__container--Home" onclick="location.href='index.html'">
+            <img src="./Assets/home.png" alt="Home" width="70px" height="70px">
+            <p>Home</p>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="section">
+
+            <img class="imagen" src="./Assets/media-aritmetica-150x150.png" width="200px" height="200px">
+
+            <div class="moda">
+                <div class="moda__item1">
+                    <h2>Calcular Moda</h2>
+                    <form class="moda__container--form">
+                        <label for="InputLista" class="Lista__container--laber">
+                            Ingrese lista de números:
+                        </label>
+                        <input id="InputLista" type="number" class="input" placeholder="1">
+                        <button type="button" onclick="subirNumerosLista()"> Agregar números a la lista</button>
+                        <button type="button" onclick="onClickCalcularModa()">Calcular Moda</button>
+                    </form>
+                </div>
+               
+                <div class="moda__item2">
+                    <h2>Listado de números</h2>
+                        <div class="moda__item2--lista">
+                            <ol id="listaDeNumero" class="listaDeNumero"> 
+                            </ol>
+                        </div>
+                </div>
+
+            </div> 
+    </section>
+    </main>
+    
+    
+     <div class="resultado" id="resultado">
+        <div class="resultado__item" id="resultadoItem">
+            <p><span onclick="closeresultado();">X</span></p>
+            <img src="./Assets/moda.png">
+            <h2 id="Resultado"></h2>
+        </div>
+    </div> 
+
+    <script src="./js/moda.js"></script>
+</body>
+</html>

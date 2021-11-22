@@ -1,0 +1,200 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh;
+    background: rgb(5,5,5);
+    background: linear-gradient(0deg, rgba(5,5,5,0) , rgba(20,33,61,1) 100%);
+    background-color: #fca311;    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-evenly;
+    background:rgba(73, 73, 73, 0.226);
+}
+
+.header__title{
+    color: white;
+    font-family:"Poppins", sans-serif; 
+    font-size: 26px;
+}
+
+.header__container--Home{
+    cursor: pointer;
+    text-align: center;
+    color: white;  
+}
+
+.header__container--Home p{
+    font-family: 'Mulish', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+main{
+    display: block;
+}
+
+.section{
+    text-align: center;
+}
+
+.imagen{
+    place-self: center;
+}
+
+.moda{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 700px));
+    gap: 20px; 
+    justify-content: center;
+    padding: 30px;
+}
+
+.moda__item1{
+    border: 2px solid black;
+    background-color: rgba(163, 162, 162, 0.418);
+    border-radius: 25px; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    place-self: center;
+}
+
+.moda__item1 h2{
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Lista__container--laber{
+    font-size: 19px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.moda__container--form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.input{
+    background-color: rgba(163, 162, 162, 0.418);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    outline: none;
+    height: 30px;
+    width: 100px;  
+}
+
+.moda__container--form button{
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 10px;
+    font-family: 'Mulish', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color:#08FF00;
+}
+
+.moda__container--form button:hover{
+    background-color: #416568;
+}
+
+.moda__item2{
+    border: 2px solid black;
+    background-color: rgba(163, 162, 162, 0.418);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    place-self: center;
+}
+
+.moda__item2 h2{
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#listaDeNumero li{
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color:#023047;
+    background-image: url(/Assets/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 10% center;
+    padding: 4px 35px 4px 35px;
+    font-family: "Poppins", sans-serif;
+}
+
+.resultado{
+    position: fixed;
+    background-color: rgba(9, 9, 9, 0.6); 
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    place-items: center;
+}
+
+.resultado .resultado__item{
+    background-color: #fb8500;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: "Open Sans", sans-serif; 
+}
+
+.resultado .resultado__item p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+
+.resultado .resultado__item p span{
+    cursor: pointer;
+}
+
+.resultado__item img{
+    width: 100px;
+    height: 100px;
+}
+
+.resultado__item h2{
+    font-size: 34px;
+}
+
+
+
+
