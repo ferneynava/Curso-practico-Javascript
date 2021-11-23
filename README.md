@@ -29,6 +29,10 @@ JavaScript practico
 - Tercer paso: Crear funciones
 - Cuarto paso: Integrar JS con HTML
 
+## Contact 📧
+
+- Linkedin [Ferneynava](https://www.linkedin.com/in/ferney-alexander-nava-trujillo-0478a8118/)
+
 ## Licencia 📃
-Copyright © 2021 Ferney Nava .
-Este proyecto tiene licencia del MIT
+Copyright © 2021 [Ferney Nava](https://github.com/ferneynava).<br />
+Este proyecto tiene licencia de [MIT](/LICENSE) 
