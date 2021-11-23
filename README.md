@@ -7,6 +7,7 @@ JavaScript practico
 
 ![alt text](https://raw.githubusercontent.com/ferneynava/Curso-practico-Javascript/main/Assets/Captura.JPG)
 
+
 ## Taller #1: figuras geométricas
 
 - Primer paso: definir las fórmulas
@@ -27,3 +28,7 @@ JavaScript practico
 - Segundo paso: Implementar las formulas en JavaScript
 - Tercer paso: Crear funciones
 - Cuarto paso: Integrar JS con HTML
+
+## Licencia 📃
+Copyright © 2021 Ferney Nava .
+Este proyecto tiene licencia del MIT
