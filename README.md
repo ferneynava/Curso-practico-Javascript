@@ -3,6 +3,10 @@ JavaScript practico
 
 ...
 
+# Visión general 🚀
+
+![alt text](https://raw.githubusercontent.com/ferneynava/Curso-practico-Javascript/main/Assets/Captura.JPG)
+
 ## Taller #1: figuras geométricas
 
 - Primer paso: definir las fórmulas
