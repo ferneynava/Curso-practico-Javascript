@@ -1,6 +1,6 @@
 # Curso-practico-Javascript
-JavaScript practico
 
+Proyecto del curso pagina web de matemáticas, consiste en el calculo de diferentes ejerciciós matemáticos basicos.  
 ...
 
 # Demo 🚀
